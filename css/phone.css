@@ -1,0 +1,122 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+    z-index: 10000;
+    position: sticky;
+    opacity: 0.9;
+  
+}
+
+#navbar ul li a{
+    font-size: 0.32rem;
+    padding: 0px 2px;
+    top: -56px;
+    position: relative;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -26px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+}
+/* Home */
+#home{
+    height: 508px;
+    padding: 0px 0px;
+}
+
+#home::before{
+    height: 586px;
+}
+
+#home .h-primary{
+    font-size: 27px;
+    position: relative;
+    top: -59px;
+    padding: 7px 0px;
+
+}
+
+.h-primary-center {
+    top: 16px;
+    position: relative;
+    font-size: 24px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px 37px;
+}
+
+#home .h-secondary{
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+    padding: 5px 42px;
+}
+.h-primary-end {
+    font-size: 24px;
+    top: -14px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 4px 37px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.h-primary-foot {
+    font-size: 24px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 4px 37px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3px;
+    top: 19px;
+}
+
+#home .btn{
+    position: relative;
+    top: 76px;
+    /* size: 0px; */
+    font-size: 10px;
+}
+/* Service */
+#services{
+    flex-direction: column;
+}
+
+
+/* Client */
+#client{
+    flex-wrap: wrap;
+}
+
+#client img{
+
+    padding: 32px 0px;
+    height: 66px;
+    /* border: 2px solid red; */
+    margin: -28px
+}
+
+/* Contact Us */
+
+/* Footer */

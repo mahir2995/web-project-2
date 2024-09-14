@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 75px;
+    z-index: 10000; /* Ensure it stays above other elements */
+    
+    
+}
+
+#logo img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 6px;
+    
+}
+
+#navbar ul{
+    display: flex;
+    position: relative;
+    
+}
+
+#navbar ul li{
+    
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+} 
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+   
+} 
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+} 
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.4;
+   position: absolute;
+
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px;
+    height: 527px;
+    
+}
+#home .h-primary{
+    
+    border-radius: 20px;
+    background-color: rgb(124, 124, 124);
+    opacity: 0.5;
+    color: red;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 612px;
+    z-index: -1;
+    opacity: 0.89;
+    position: absolute;
+    top: -10px;
+}
+
+#home h1{
+    color: white;
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+
+
+#home h1{
+    color: white;
+    font-size: 3.8rem;
+    text-align: center;
+    top: -31px;
+    padding: 12px 12px;
+    position: relative;
+    font-family: "Noto Sans", sans-serif;
+   
+    
+}
+
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+     font-family: "Noto Sans", sans-serif;
+     top: 18px;
+     position: relative;
+    
+}
+#home .h-secondary{
+    font-family: "Josefin Sans", sans-serif;
+}
+.btn{
+    padding: 5px 20px;
+    border: 2px solid white;
+    background-color: rgb(94, 94, 94);
+    cursor: pointer;
+    border-radius: 20px;
+    top: 67px;
+    color: white;
+    position: relative;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#services-container{
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#services{
+    display: flex;
+    margin: 34px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.h-primary-center{
+    top: 16px;
+    position: relative;
+    font-size: 40px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px 37px;
+}
+
+.box p{
+    font-family: "Josefin Sans", sans-serif;
+    margin: 18px;
+    padding: 1px 3px;
+    font-size: 18px;
+    
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 2px 6px;
+    border-radius: 20px;
+    background-color: rgb(210, 210, 210);
+   
+}
+
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    position: relative;
+    left: -9px;
+   
+}
+
+#client-section{
+    text-align: center;
+    justify-content: center;  
+    position:relative;
+}
+
+.h-primary-end{
+    font-size: 40px;
+    top: -14px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 4px 37px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3px;
+} 
+
+#client{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#client::before{
+    content: "";
+    background: url('../img/bg5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 74%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    
+}
+
+#client img{
+   height: 120px;
+   border-radius: 100px;
+   
+}
+
+.client-item{
+    padding: 34px;
+}
+
+.box img:hover{
+
+    cursor: pointer;
+    
+}
+
+.client-item img:hover{
+    cursor: pointer;
+}
+
+
+
+#contact{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+.h-primary-foot{
+    font-size: 40px;
+    font-family: "Bungee Tint", sans-serif;
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 4px 37px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3px;
+    top: 19px;
+    
+}
+#contact-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    
+}
+#contact-box::before{
+    content: "";
+    background: url('../img/bg6.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    top: 32px;
+}
+
+#contact-box input,textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+#contact-box form{
+    width: 40%;
+    position: relative;
+    top: 54px;
+    height: auto;
+    text-align: start;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: 16px;
+}
